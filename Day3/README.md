@@ -1,4 +1,4 @@
-[Link to the description](http://adventofcode.com/2017/day/1)
+[Link to the description](http://adventofcode.com/2017/day/3)
 
 input: 289326
 
