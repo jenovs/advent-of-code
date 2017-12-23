@@ -76,12 +76,12 @@ func loop(commands [][]string) int {
 
 	b := r["b"]
 	c := r["c"]
-	h := r["h"]
+	h := 0
 	// get subtracting value
 	s, _ := strconv.Atoi(commands[30][2])
 
 	// simplified loop
-	for b-c <= 0 {
+	for c-b >= 0 {
 		if !isPrime(b) {
 			h++
 		}
