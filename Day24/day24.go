@@ -30,13 +30,13 @@ func main() {
 
 	start := 0
 	findMax(s, start, 0)
+	fmt.Println("Maximum strength bridge:", max)
 	findLongest(s, start, 0, 0)
-	fmt.Println(max)
+	fmt.Println("Strength of the longest bridge:", max2)
 
 }
 
 var max int
-var cMax int
 
 func findMax(s [][]int, p int, sum int) {
 	nn := findPieces(s, p)
@@ -67,13 +67,11 @@ func findLongest(s [][]int, p int, sum int, c int) {
 
 	if len(nn) == 0 {
 		if c == longest && sum > max2 {
-			fmt.Println(c, sum)
 			max2 = sum
 		}
 		if c > longest {
 			longest = c
 			max2 = sum
-			fmt.Println(c, sum)
 		}
 		return
 	}
